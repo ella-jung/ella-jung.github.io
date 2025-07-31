@@ -4,6 +4,15 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<style>
+  #daumRoughmapContainer1752138440026 {
+    width: 100% !important;
+  }
+
+  .root_daum_roughmap {
+    max-width: 100%;
+  }
+</style>
 <html>
 	<head>
 		<!-- Favicon-->
@@ -141,22 +150,22 @@
 								</script>-->
 								<!-- * 카카오맵 - 지도퍼가기 -->
 								<!-- 1. 지도 노드 -->
-								<div id="daumRoughmapContainer1752138440026" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+								<div id="mapContainerWrapper" style="max-width: 100%; width: 100%;">
+								  <div id="daumRoughmapContainer1752138440026" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+								</div>
 								
-								<!--
-									2. 설치 스크립트
-									* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-								-->
-								<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+								<!-- 2. 설치 스크립트 -->
+								<script charset="UTF-8" class="daum_roughmap_loader_script"
+								        src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 								
 								<!-- 3. 실행 스크립트 -->
 								<script charset="UTF-8">
-									new daum.roughmap.Lander({
-										"timestamp" : "1752138440026",
-										"key" : "5e43e3xcesj",
-										"mapWidth" : "480",
-										"mapHeight" : "350"
-									}).render();
+								  new daum.roughmap.Lander({
+								    "timestamp": "1752138440026",
+								    "key": "5e43e3xcesj",
+								    "mapWidth": "100%",
+								    "mapHeight": "350"
+								  }).render();
 								</script>
 								<a class="btn btn-light btn-xl" href="https://kko.kakao.com/qLY5x-gb-X" target="_blank"><img src="images/kakao_map.png" alt="" width="20" height="20" />  카카오맵</a>
 								<p></p>
