@@ -48,10 +48,10 @@
 				  ],
 				});
 			  }
-			function copyToClipboard(txt) {
+			function copyToClipboard(name, txt) {
 			//   const text = document.getElementById('myText').textContent;
 			  navigator.clipboard.writeText(txt).then(() => {
-				alert('복사 완료!');
+				alert(name + ' ' + txt + ' 복사 완료!');
 			  });
 			}
 		</script>
@@ -100,16 +100,16 @@
 										<header class="major">
 											<h2 class="major">초대합니다</h2>
 										</header>
-										<p><h5>
+										<p><h4>
 											8년의 4계절을 함께한 저희 두 사람.<br /><br />3월의 어느 멋진 날,<br />이제 평생을 함께하려 합니다.<br /><br />
 											처음의 설렘을 간직하고<br />같은 곳을 바라보며<br />믿음과 사랑으로 늘 함께하겠습니다.<br /><br />
 											시작의 한 걸음<br />그 순간을 함께해주시면<br />늘 감사히 생각하며 예쁘게 살겠습니다.
-										</h5></p>
+										</h4></p>
 										<p><br /></p>
 										<table>
 											<tr>
-											<td><b>이종호 • 박선자</b>의 아들</td>
-											<td><b>정재완 • 이현주</b>의 딸</td>
+											<td><h3><b>이종호 • 박선자</b>의 아들</h3></td>
+											<td><h3><b>정재완 • 이현주</b>의 딸</h3></td>
 											</tr>
 											<tr>
 											<td><h2><b>이 진 영</b></h2></td>
@@ -265,41 +265,47 @@
 								<header class="major">
 									<h2>마음 전하실 곳</h2>
 								</header>
-								<p><h5>
+								<p>
 									참석이 어려운 분들을 위해 마련했습니다.<br />
 									넓은 마음으로 양해 부탁드립니다.<br />
 									전해주시는 진심은 소중하게 간직하고 보답하겠습니다.<br /><br />
-								</h5></p>
+								</p>
 								<table>
 									<tr>
 										<th><h3 style="font-weight: bold; color: #f08686;">신랑측</h3></th>
 									</tr>
 									<tr>
-										<th>신랑 <b>이진영</b> <a href="sms:01041233839" class="far fa-comments"><span class="label"></span></th>
-										<th>국민은행 <a onclick="copyToClipboard('279802-04-037134')">279802-04-037134</a></th>
+										<!-- <th>신랑 <b>이진영</b> <a href="sms:01041233839" class="far fa-comments"><span class="label"></span></th> -->
+										<th>신랑 <b>이진영</b></th>
+										<th>국민은행 <a onclick="copyToClipboard('이진영, 국민은행', '279802-04-037134')">279802-04-037134</a></th>
 									</tr>
 									<tr>
-										<th>아버지 <b>이종호</b> <a href="sms:01033543838" class="far fa-comments"><span class="label"></span></th>
-										<th>기업은행 <a onclick="copyToClipboard('010-3354-3838')">010-3354-3838</a></th>
+										<!-- <th>아버지 <b>이종호</b> <a href="sms:01033543838" class="far fa-comments"><span class="label"></span></th> -->
+										<th>아버지 <b>이종호</b></th>
+										<th>기업은행 <a onclick="copyToClipboard('이종호, 기업은행', '010-3354-3838')">010-3354-3838</a></th>
 									</tr>
 									<tr>
-										<th>어머니 <b>박선자</b> <a href="sms:01033533465" class="far fa-comments"><span class="label"></span></th>
-										<th>농협은행 <a onclick="copyToClipboard('351-1363-0432-53')">351-1363-0432-53</a></th>
+										<!-- <th>어머니 <b>박선자</b> <a href="sms:01033533465" class="far fa-comments"><span class="label"></span></th> -->
+										<th>어머니 <b>박선자</b></th>
+										<th>농협은행 <a onclick="copyToClipboard('박선자, 농협은행', '351-1363-0432-53')">351-1363-0432-53</a></th>
 									</tr>
 									<tr>
 										<th><h3 style="font-weight: bold; color: #f08686;">신부측</h3></th>
 									</tr>
 									<tr>
-										<th>신부 <b>정금영</b> <a href="sms:01091940794" class="far fa-comments"><span class="label"></th>
-										<th>카카오뱅크 <a onclick="copyToClipboard('3333-02-7701646')">3333-02-7701646</a></th>
+										<!-- <th>신부 <b>정금영</b> <a href="sms:01091940794" class="far fa-comments"><span class="label"></th> -->
+										<th>신부 <b>정금영</b></th>
+										<th>카카오뱅크 <a onclick="copyToClipboard('정금영, 카카오뱅크', '3333-02-7701646')">3333-02-7701646</a></th>
 									</tr>
 									<tr>
-										<th>아버지 <b>정재완</b> <a href="sms:01035155225" class="far fa-comments"><span class="label"></span></th>
-										<th>농협은행 <a onclick="copyToClipboard('352-0977-6542-13')">352-0977-6542-13</a></th>
+										<!-- <th>아버지 <b>정재완</b> <a href="sms:01035155225" class="far fa-comments"><span class="label"></span></th> -->
+										<th>아버지 <b>정재완</b></th>
+										<th>농협은행 <a onclick="copyToClipboard('정재완, 농협은행', '352-0977-6542-13')">352-0977-6542-13</a></th>
 									</tr>
 									<tr>
-										<th>어머니 <b>이현주</b> <a href="sms:01088590794" class="far fa-comments"><span class="label"></span></th>
-										<th>카카오뱅크 <a onclick="copyToClipboard('3333-25-7495207')">3333-25-7495207</a></th>
+										<!-- <th>어머니 <b>이현주</b> <a href="sms:01088590794" class="far fa-comments"><span class="label"></span></th> -->
+										<th>어머니 <b>이현주</b></th>
+										<th>카카오뱅크 <a onclick="copyToClipboard('이현주, 카카오뱅크', '3333-25-7495207')">3333-25-7495207</a></th>
 									</tr>
 								</table>
 							</section>
