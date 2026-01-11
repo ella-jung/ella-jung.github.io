@@ -19,6 +19,44 @@
 		<meta property="og:image" content="https://ella-jung.github.io/images/thumb.jpg?v=1">
 		<meta property="og:site_name" content="이진영🖤정금영 결혼식에 초대합니다.">
 		<meta property="og:locale" content="ko_KR">
+
+		<script src="//developers.kakao.com"></script>
+		<script>
+		Kakao.init('670d2bdfaa8223d3bbe10a167d05ba79'); // 발급받은 키
+		</script>
+		<script>
+			function kakaoShare() {
+				Kakao.Link.sendDefault({
+				  objectType: 'feed',
+				  content: {
+					title: '이진영🖤정금영 결혼식에 초대합니다.',
+					description: '26.03.21(토) 15:30 / 수원 WI컨벤션 I홀',
+					imageUrl: 'https://ella-jung.github.io/images/thumb.jpg?v=1', // 대표 이미지 URL
+					link: {
+					  mobileWebUrl: 'https://ella-jung.github.io',
+					  webUrl: 'https://ella-jung.github.io',
+					},
+				  },
+				  buttons: [
+					{
+					  title: '웹으로 보기',
+					  link: {
+						mobileWebUrl: 'https://ella-jung.github.io',
+						webUrl: 'https://ella-jung.github.io',
+					  },
+					},
+				  ],
+				});
+			  }
+			function copyToClipboard(txt) {
+			//   const text = document.getElementById('myText').textContent;
+			  navigator.clipboard.writeText(txt).then(() => {
+				alert('복사 완료!');
+			  });
+			}
+		</script>
+		<!-- <button onclick="copyToClipboard()">복사</button> -->
+
 	</head>
 	<body class="is-preload">
 
@@ -136,7 +174,15 @@
 												<td></td>
 											</tr>
 										</table>
-										<h4>2026.03.21(토) 오후 3시 30분</h4>
+										<h4>2026.03.21(토) 오후 3시 30분<br /></h4>
+										<!-- 링크 공유하기 버튼 -->
+										<p><br /></p>
+										<footer class="major">
+											<ul class="actions special">
+												<li><a onclick="kakaoShare()" class="button primary">카카오톡 공유하기</a></li>
+												<li><a onclick="copyToClipboard('ella-jung.github.io')" class="button">링크 복사하기</a></li>
+											</ul>
+										</footer>
 									</div>
 								</div>
 							</section>
@@ -230,34 +276,33 @@
 									</tr>
 									<tr>
 										<th>신랑 <b>이진영</b> <a href="sms:01041233839" class="far fa-comments"><span class="label"></span></th>
-										<th>국민은행 279802-04-037134</th>
+										<th>국민은행 <a onclick="copyToClipboard('279802-04-037134')">279802-04-037134</a></th>
 									</tr>
 									<tr>
 										<th>아버지 <b>이종호</b> <a href="sms:01033543838" class="far fa-comments"><span class="label"></span></th>
-										<th>기업은행 010-3354-3838</th>
+										<th>기업은행 <a onclick="copyToClipboard('010-3354-3838')">010-3354-3838</a></th>
 									</tr>
 									<tr>
 										<th>어머니 <b>박선자</b> <a href="sms:01033533465" class="far fa-comments"><span class="label"></span></th>
-										<th>농협은행 351-1363-0432-53</th>
+										<th>농협은행 <a onclick="copyToClipboard('351-1363-0432-53')">351-1363-0432-53</a></th>
 									</tr>
 									<tr>
 										<th><h3 style="font-weight: bold; color: #f08686;">신부측</h3></th>
 									</tr>
 									<tr>
 										<th>신부 <b>정금영</b> <a href="sms:01091940794" class="far fa-comments"><span class="label"></th>
-										<th>카카오뱅크 3333-02-7701646</th>
+										<th>카카오뱅크 <a onclick="copyToClipboard('3333-02-7701646')">3333-02-7701646</a></th>
 									</tr>
 									<tr>
 										<th>아버지 <b>정재완</b> <a href="sms:01035155225" class="far fa-comments"><span class="label"></span></th>
-										<th>농협은행 352-0977-6542-13</th>
+										<th>농협은행 <a onclick="copyToClipboard('352-0977-6542-13')">352-0977-6542-13</a></th>
 									</tr>
 									<tr>
 										<th>어머니 <b>이현주</b> <a href="sms:01088590794" class="far fa-comments"><span class="label"></span></th>
-										<th>카카오뱅크 3333-25-7495207</th>
+										<th>카카오뱅크 <a onclick="copyToClipboard('3333-25-7495207')">3333-25-7495207</a></th>
 									</tr>
 								</table>
 							</section>
-
 					</div>
 
 				<!-- Footer -->
