@@ -414,19 +414,19 @@ input, select, textarea {
 	}
 
 	input, select, textarea {
-		color: #ffffff;
+		color: #000000;
 	}
 
 	a:hover {
-		color: #ffffff;
+		color: #000000;
 	}
 
 	strong, b {
-		color: #ffffff;
+		color: #000000;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #000000;
 	}
 
 	blockquote {
@@ -2450,6 +2450,10 @@ input, select, textarea {
 				}
 
 		}
+		
+	.icon {
+		color: #000000;
+	}
 
 	.icon.major {
 		border-color: rgba(255, 255, 255, 0.35);
