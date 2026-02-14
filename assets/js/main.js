@@ -165,9 +165,9 @@ $('.slider-1 > .side-btns > div').click(function(){
     $post.click();
 });
 
-setInterval(function(){
-    $('.slider-1 > .side-btns > div').eq(1).click();
-}, 3000);
+// setInterval(function(){
+//     $('.slider-1 > .side-btns > div').eq(1).click();
+// }, 3000);
 
 		// Scrolly.
 		$('.scrolly').scrolly({
